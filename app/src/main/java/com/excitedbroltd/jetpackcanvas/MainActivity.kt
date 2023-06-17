@@ -25,6 +25,7 @@ import com.excitedbroltd.jetpackcanvas.ui.theme.JetpackCanvasTheme
 import com.excitedbroltd.mylibrary.MyProgressBar
 import com.excitedbroltd.mylibrary.MyProgressBar.Companion.waveCanvas
 
+
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +50,7 @@ class MainActivity : ComponentActivity() {
                     waveCanvas(
                         text = text,
                         progressValue = progressValue,
-                        maximumProgress = 1000f,
+                        maximumProgress = 100f,
                         animationDuration = 1000
                     )
                     TextField(
@@ -57,6 +58,7 @@ class MainActivity : ComponentActivity() {
                         keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
                         onValueChange = {
                             progressValue = it.toFloat()
+                            text = "$it GB"
                         })
                     Button(onClick = { }) {
                         Text(text = "Update")
