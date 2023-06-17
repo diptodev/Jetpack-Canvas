@@ -8,13 +8,13 @@ To get a Git project into your build:
 ```
 allprojects {
 		repositories {
-			maven { url 'https://jitpack.io' }
+			 maven { url 'https://jitpack.io' }
 		}
-	} 
+	    }
 ```
 > Step 2. Add the dependency
 ```
 dependencies {
 	        implementation 'com.github.diptodev:Jetpack-Canvas:1.0.0'
-	}
+	     }
 ```
