@@ -18,5 +18,5 @@ dependencies {
 	        implementation 'com.github.diptodev:Jetpack-Canvas:1.0.0'
 	     }
 ```
-> Demu Picture
+ Demu Picture
 ![demuPicture](https://github.com/diptodev/Jetpack-Canvas/assets/127576890/d8975d29-e44b-482f-8e36-ef0a8c58ab74)
